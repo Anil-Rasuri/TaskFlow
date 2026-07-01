@@ -1,0 +1,1866 @@
+body{
+    overflow: hidden;
+}
+
+.A{
+    display: none;
+}
+.sidebar-layout{
+    border: none;
+
+    width: 16%;
+  
+   
+
+   
+
+    margin-left: -5px;
+    margin-top: -7px;
+    box-shadow: 0px 2px 3px;
+
+  
+
+    
+}
+    
+.header-bar{
+    border: none;
+
+    
+    justify-content: center;
+
+    height: 40px;
+    width: 84.5%;
+
+    margin-left: 240px;
+    margin-top: -750px;
+
+    background-color: rgb(233, 211, 254);
+    box-shadow: 0px 1px 2px;
+
+    
+   
+    
+
+}
+.header-bar h3{
+   font-size: 30px;
+   padding-left: 10px;
+}
+.header-right{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+    margin-top: -105px;
+    margin-left: 85%;
+
+   
+   
+
+   
+}
+.header-bar p{
+    font-size: 20px;
+    margin-top: 49px;
+
+    border:none;
+    background-color: cadetblue;
+    border-radius:50%;
+    box-shadow: 0px 1px 2px;
+    text-align: center;
+
+    
+
+    
+}
+.header-bar p1{
+    position: relative;
+    font-size: 20px;
+    
+
+    margin-top: 50.5px;
+   
+    border:none;
+    background-color: cadetblue;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px;
+    text-align: center;
+
+
+    height: 20px;
+    width: 100px;
+
+    color: #ffff;
+
+    padding: 2.5px;
+   
+}
+.sidebar-inside{
+    background-color: rgb(233, 211, 254);
+  
+    height: 719px;
+
+}
+.sidebar-inside img{
+    width: 100px;
+
+    margin-left: -10px;
+    margin-top: -10px;
+
+
+}
+.sidebar-inside h2{
+    margin-left: 90px;
+    margin-top: -70px;
+}
+.sidebar-inside p{
+    margin-left: 90px;
+    margin-top: -20px;
+
+    margin-bottom: 80px;
+}
+.options p1{
+margin-top: -20px;
+margin-left: 13%;
+
+display: flex;
+flex-direction: column;
+
+
+border: none;
+
+border-radius: 8px;
+
+width: 140px;
+
+align-items:left ;
+padding: 4px;
+
+cursor: pointer;
+gap:-4px;
+
+
+}
+.options p1.active{
+    background-color: blueviolet;
+    font-weight: bold;
+}
+.options p1:hover{
+    background-color: blueviolet;
+}
+.sidebar-downside{
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(234, 221, 246);
+    box-shadow: 0px 3px 4px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+
+    margin-left: 6px;
+    
+
+    width: 220px;
+    height: 105px;
+    padding: 5px;
+
+    gap: -5px;
+}
+.sidebar-downside img{
+    margin-top: -5px;
+}
+.sidebar-downside p3{
+    padding-top: 10px;
+}
+.logout-section{
+    margin-top: -20px;
+    margin-bottom: 70px;
+    margin-left: 14%;
+
+    display: flex;
+    
+
+
+    border: none;
+
+    border-radius: 8px;
+
+    width: 140px;
+    height: 19px;
+
+    align-items:left ;
+    padding: 2px;
+
+    cursor: pointer;
+    gap:10px
+}
+.logout-section:hover{
+    background-color: blueviolet;
+}
+.logout-section img{
+    width: 12px;
+   
+
+    margin-left: 4px;
+    margin-top: 0px;
+}
+
+
+
+
+.dashboard-sections{
+    display: flex;
+    margin-left: 16.5%;
+
+    margin-top: 10px;
+   
+
+}
+.dashboard-sections p{
+    margin-top: 50px;
+    margin-left: -111px;
+}
+.dashboard-sections p1{
+    margin-top: 50px;
+    margin-left: 5px;
+}
+
+.sections{
+    display: flex;
+    gap:50px;
+
+    margin-left: 17%;
+    margin-top: -30px;
+   
+
+}
+.sections h3{
+border: none;
+background-color: rgb(208, 247, 247);
+box-shadow: 0px 2px 3px;
+
+padding: 10px;
+
+width: 200px;
+height: 60px;
+
+font-size: 40px;
+
+}
+
+.headings{
+    display: flex;
+    margin-top: -100px;
+    
+    gap:200px;
+    
+
+    margin-left: 22%;
+}
+.headings p1{
+    margin-top: -100px;
+    margin-left: 4px;
+
+    font-size: 17px;
+}
+.headings p2{
+    margin-top: -100px;
+    margin-left: -7px;
+
+    font-size: 17px;
+}
+.headings p3{
+    margin-top: -100px;
+    margin-left: -51px;
+
+    font-size: 17.5px;
+}
+.headings p4{
+    margin-top: -90px;
+    margin-left: -40px;
+
+    
+
+   
+
+    font-size: 18px;
+}
+
+
+
+.priority{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-top: 20px;
+    margin-left: 72%;
+}
+
+.urgent{
+    display: flex;
+    flex-direction: column;
+    
+
+    margin-left: 17%;
+    margin-top: -50px;
+
+    width: 650px;
+    border-collapse: collapse;
+
+    
+}
+.urgent th{
+   
+   
+
+    border: none;
+    background-color:  rgb(233, 211, 254);
+    box-shadow: 0px 2px 3px;
+
+    
+}
+.urgent td{
+    border: none;
+    background-color:rgb(246, 201, 179);
+    box-shadow: 0px 2px 3px;
+
+    padding: 10px;
+
+}
+.table-scr{
+    max-height: 300px;
+    overflow-y: auto;
+}
+.table-scr table{
+    width: 100%;
+   
+}
+.table-scr thead th{
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+.urgent h4{
+    margin-top: 0px;
+    padding: 10px;
+
+    width: 325px;
+
+    margin-bottom: 5px;
+    margin-left: 2px;
+
+    border: none;
+    background-color: rgb(208, 247, 247);
+    box-shadow: 0px 2px 3px;
+}
+.total-tasks{
+    margin-left: 22.5%;
+    margin-top: -70px;
+
+    font-size: 17px;
+    font-weight: bold;
+}
+.com-tasks{
+    margin-left: 40.2%;
+    margin-top: -35px;
+
+    font-size: 17px;
+    font-weight: bold;
+}
+.pen-tasks{
+    margin-left: 57.7%;
+    margin-top: -38px;
+
+    font-size: 17px;
+    font-weight: bold;
+}
+.bimage img{
+    width: 500px;
+}
+.bimage{
+    position: fixed;
+    bottom: -15px;
+    right: -20px;
+}
+
+ 
+
+
+
+.view-task{
+    margin-left: 16.1%;
+
+    display: none;
+}
+.change-status-box1{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px;
+    background-color: rgb(236, 246, 184);
+
+    width: 17%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    margin-left: 80.5%;
+
+    margin-top: -60px;
+    margin-bottom: -15px;
+
+    padding-left: 30px;
+
+    display: none;
+    
+   
+}
+.change-status-box1 p{
+    display: flex;
+   
+    color: green;
+    font-weight: bold;
+    margin-left: 30px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+.change-status-box1 button{
+    
+    font-weight: bold;
+
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px;
+    background-color: blue;
+
+    position: relative;
+    margin-right: 60px;
+    margin-bottom: 5px;
+    
+
+}
+.view-task h4{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px;
+    background-color: rgb(236, 246, 184);
+    padding: 5px;
+
+    margin-bottom: 10px;
+
+    
+}
+.view-task input{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px;
+    background-color: #ffff;
+
+    padding-top: 5px;
+    width: 300px;
+
+    margin-left: 10px;
+   
+   
+   
+   text-align: center;
+   
+}
+.view-task button{
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px;
+    background-color: rgb(134, 134, 247);
+
+    color: #ffff;
+    font-weight: 600;
+    text-align: center;
+
+    cursor: pointer;
+
+}
+.view-task button:hover{
+    background-color: blue;
+}
+.view-task select{
+    margin-left: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px;
+    background-color: rgb(8, 243, 27);
+
+    text-align: center;
+    cursor: pointer;
+}
+.view-task h3{
+    border: none;
+    background-color:rgb(166, 243, 243);
+    box-shadow: 0px 2px 3px;
+
+    width: 50%;
+    padding: 5px;
+    padding-left: 20px;
+}
+.view-task th{
+    
+
+    border: none;
+    background-color:  rgb(233, 211, 254);
+    box-shadow: 0px 2px 3px;
+
+    width: 120px;
+    padding: 5px;
+    
+}
+.view-task td{
+    
+    border: none;
+    background-color:rgb(246, 201, 179);
+    box-shadow: 0px 0px 3px;
+
+    padding: 8px;
+
+
+
+}
+.table-scroll{
+    max-height: 410px;
+    overflow-y: auto;
+}
+.table-scroll table{
+    width: 100%;
+   
+}
+.table-scroll thead th{
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+
+
+#view-task-table td:nth-child(8),#view-task-to-update td:nth-child(8),.CP-table-scroll td:nth-child(8){
+    padding-left: 40px;
+}
+#view-task-table td:nth-child(7),#view-task-to-update td:nth-child(7),.CP-table-scroll td:nth-child(7){
+    padding-left: 35px;
+}
+#view-task-table td:nth-child(6),#view-task-to-update td:nth-child(6),.CP-table-scroll td:nth-child(6){
+    padding-left: 24px;
+}
+#view-task-table td:nth-child(5),#view-task-to-update td:nth-child(5),.CP-table-scroll td:nth-child(5){
+    padding-left: 30px;
+}
+#view-task-table td:nth-child(4),#view-task-to-update td:nth-child(4),.CP-table-scroll td:nth-child(4){
+    padding-left: 24px;
+}
+#view-task-table td:nth-child(3),#view-task-to-update td:nth-child(3),.CP-table-scroll td:nth-child(3){
+    padding-left: 20px;
+}
+#view-task-table td:nth-child(2),#view-task-to-update td:nth-child(2),.CP-table-scroll td:nth-child(2){
+    padding-left: 20px;
+}
+#view-task-table td:nth-child(1),#view-task-to-update td:nth-child(1),.CP-table-scroll td:nth-child(1){
+    padding-left: 10px;
+}
+
+
+
+.Add-task{
+    display: none;
+    border:none;
+    box-shadow: 0px 1px 2px;
+
+
+    width: 20%;
+    height: 400px;
+
+
+    margin-left: 300px;
+    margin-top: 60px;
+}
+.Add-task h3{
+    border: none;
+    background-color:rgb(166, 243, 243);
+    box-shadow: 0px 2px 3px;
+    padding: 10px;
+
+    margin-top: 0px;
+}
+.Add-task label{
+    padding: 10px;
+   
+}
+.Add-task input{
+    margin-left: 10px;       
+    background-color: rgb(204, 159, 246);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0.2px 0.5px 1px;
+
+    padding: 7px;
+    
+    width: 265px;
+
+    font-weight: 400;
+}
+.Add-task select{
+    margin-left: 10px;
+    padding: 7px;
+    
+    width: 277px;
+
+    background-color: rgb(204, 159, 246);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0.2px 0.5px 1px;
+    
+    font-weight: 400;
+}
+.Add-task button{
+    margin-left: 10px;
+    width:277px;
+    padding: 10px;
+
+    background-color:rgb(130, 130, 248);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0.2px 0.5px 1px;
+
+    font-weight: bold;
+   
+}
+.Add-task button:hover{
+    background-color: blue;
+    color: #ffff;
+
+    cursor: pointer;
+}
+
+.AT-success-box{
+    
+    background-color: #ffff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px;
+
+
+    width: 300px;
+    height: 50px;
+
+    margin-left: 300px;
+    margin-top: 20px;
+
+    
+   
+    padding-left: 35PX;
+    padding-top: 5px;
+    padding-bottom: 15px;
+
+    color: green;
+    font-weight: 900;
+    font-size: 20px;
+
+    display: none;
+    
+    
+}
+.AT-fail-box{
+    
+    background-color: #ffff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px;
+
+
+    width: 310px;
+    height: 50px;
+
+    margin-left: 300px;
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+   
+    padding-left: 35PX;
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+    color: red;
+    font-weight: 900;
+    font-size: 20px;
+    
+    display: none;
+    
+}
+.AT-success-box P1{
+    margin-top: -65px;
+    margin-left: 275px;
+
+    background-color: rgb(246, 181, 180);
+    color: #000;
+    border: none;
+    border-radius: 2px;
+   
+    box-shadow: 1px 2px 3px;
+
+    height: 20px;
+    width: 15px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 5px;
+  
+}
+.AT-success-box p1:hover,.AT-fail-box p1:hover{
+    background-color: red;
+    color: #ffff;
+
+    cursor: pointer;
+}
+.AT-fail-box p1{
+    margin-top: -68px;
+    margin-left: 285px;
+
+    background-color: rgb(246, 181, 180);
+    color: #000;
+    border: none;
+    border-radius: 2px;
+   
+    box-shadow: 1px 2px 3px;
+
+    height: 20px;
+    width: 15px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 5px;
+  
+}
+
+
+
+
+.manage{
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    padding-bottom: 80px;
+}
+
+.manage h3{
+    border: none;
+    background-color: rgb(208, 247, 247);
+    box-shadow: 0px 2px 3px;
+
+    width: 600px;
+
+    margin-left: 18%;
+    margin-bottom: 40px;
+
+    padding: 7px;
+
+}
+
+.manage label{
+    margin-left: 18%;
+
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.manage input{
+    width: 100px;
+
+    padding: 10px;
+
+    margin-left: 20px;
+    
+
+    background-color:  rgb(233, 211, 254);
+    box-shadow: 0px 2px 3px;
+    border-radius: 5px;
+    border: none;
+
+
+}
+.manage table{
+    margin-left: 18%;
+    margin-top: 10px;
+
+   
+
+
+}
+.manage table th{
+    border: none;
+
+    
+    background-color:  rgb(233, 211, 254);
+    box-shadow: 0px 2px 3px;
+
+    
+    width: 120px;
+    padding: 5px;
+
+}
+.manage table td{
+    border: none;
+    background-color:rgb(246, 201, 179);
+    box-shadow: 0px 2px 3px;
+
+    padding: 8px;
+
+   
+}
+
+.scr-table{
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 15px;
+
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.scr-table table{
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 15px;
+    margin-left: 18%;
+    width: 80%;
+   
+}
+.scr-table thead th{
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+.task-details{
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(233, 251, 251);
+    box-shadow: 0px 1px 2px;
+
+    width: 50%;
+    height: 300px;
+
+    margin-top: 20px;
+    margin-left: 270px;
+    padding: 18px;
+    
+}
+.task-details input {
+    margin-left: 165px;
+    margin-top: -10px;
+  
+}
+.task-details button{
+   
+    width: 50%;
+
+    margin-top: 20px;
+
+    padding: 7px;
+
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(115, 115, 240);
+    box-shadow: 0px 1px 2px;
+
+    font-weight: bold;
+}
+.task-details button:hover{
+    background-color: blue;
+}
+.task-details label{
+   
+    margin-left: 0px;
+
+    
+}
+.UT-success-box{
+    position: relative;
+
+    border: none;
+    background-color: rgb(155, 249, 155);
+    box-shadow: 0px 1px 2px;
+    border-radius: 5px;
+
+    width: 350px;
+    margin-left: 300px;
+    margin-top: -100px;
+
+    height: 70px;
+
+    font-weight: bold;
+
+    display: none;
+   
+}
+.UT-success-box{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.UT-success-box p1{
+    margin-left: 327px;
+    margin-top: -68px;
+
+    border: none;
+    background-color: rgb(253, 70, 70);
+    box-shadow: 0px 1px 2px black;
+    border-radius: 5px;
+
+    height: 20px;
+    width: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    color: black;
+}
+.UT-success-box p1:hover{
+    background-color: red;
+    color: #000;
+}
+
+.UT-fail-box{
+    position: relative;
+
+    border: none;
+    background-color: rgb(155, 249, 155);
+    box-shadow: 0px 1px 2px;
+    border-radius: 5px;
+
+    width: 350px;
+    margin-left: 300px;
+    margin-top: -100px;
+
+    height: 70px;
+
+    font-weight: bold;
+
+    display: none;
+   
+}
+.UT-fail-box{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.UT-fail-box p1{
+    margin-left: 327px;
+    margin-top: -68px;
+
+    border: none;
+    background-color: rgb(253, 70, 70);
+    box-shadow: 0px 1px 2px black;
+    border-radius: 5px;
+
+    height: 20px;
+    width: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    color: black;
+}
+.UT-fail-box p1:hover{
+    background-color: red;
+    color: #000;
+}
+.delete-task{
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(233, 251, 251);
+    box-shadow: 0px 1px 2px;
+
+    width: 50%;
+    
+
+    margin-top: 20px;
+    margin-left: 270px;
+    padding: 18px;
+    
+
+}
+.delete-task h3{
+    margin-top: -17.9px;
+    margin-left: -18.4px;
+
+    border: none;
+    background-color:rgb(246, 110, 110);
+    border-radius: 5px 5px 0px 0px;
+
+    width: 103.5%;
+    padding-left: 20px;
+    padding: 5px;
+}
+.delete-task label{
+    font-weight: 549;
+    margin-left: 0px;
+    
+}
+.delete-task input{
+    margin-left: 20px;
+
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: red;
+
+    padding: 7px;
+
+}
+.delete-task button{
+    width: 50%;
+
+    font-weight: 550;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+
+    padding: 5px;
+}
+
+
+
+
+
+.Delete-success-box{
+    position: relative;
+
+    border: none;
+    background-color: rgb(155, 249, 155);
+    box-shadow: 0px 1px 2px;
+    border-radius: 5px;
+
+    width: 350px;
+    margin-left: 300px;
+    margin-top: -100px;
+
+    height: 70px;
+
+    font-weight: bold;
+
+    padding-left: 20px;
+    padding-top: 20px;
+    
+    display: none;
+}
+
+.Delete-success-box p1{
+    margin-left: 327px;
+    margin-top: -68px;
+
+    border: none;
+    background-color: rgb(253, 70, 70);
+    box-shadow: 0px 1px 2px black;
+    border-radius: 5px;
+
+    height: 20px;
+    width: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    color: black;
+}
+.Delete-success-box p1:hover{
+    background-color: red;
+    color: #000;
+}
+
+.Delete-fail-box{
+    position: relative;
+
+    border: none;
+    background-color: rgb(155, 249, 155);
+    box-shadow: 0px 1px 2px;
+    border-radius: 5px;
+
+    width: 350px;
+    margin-left: 300px;
+    margin-top: -100px;
+
+    height: 70px;
+
+    font-weight: bold;
+
+    display: none; 
+   
+}
+.Delete-fail-box{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.Delete-fail-box p1{
+    margin-left: 327px;
+    margin-top: -68px;
+
+    border: none;
+    background-color: rgb(253, 70, 70);
+    box-shadow: 0px 1px 2px black;
+    border-radius: 5px;
+
+    height: 20px;
+    width: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    color: black;
+}
+.Delete-fail-box p1:hover{
+    background-color: red;
+    color: #000;
+}
+
+
+
+
+
+
+.CP-task h3{
+    margin-left: 17%;
+    margin-bottom: 20px;
+
+    border: none;
+    background-color: rgb(166, 243, 243);
+    border-radius: 5px ;
+    box-shadow: 0px 1px 2px;
+
+    width: 50%;
+    padding-left: 20px;
+    padding: 5px;
+
+    
+}
+.CP-task label{
+    margin-left: 17%;
+    
+    
+    width: 100px;
+    
+    
+    font-size: 25px;
+    font-weight: bold;
+
+    display: flex;
+
+    
+
+}
+.CP-task select{
+    margin-left: 23%;
+    
+    margin-top: -30px;
+
+    position:absolute;
+
+    width: 200px;
+    padding: 5px;
+    padding-left: 30px;
+
+    border: none;
+    background-color: rgb(18, 196, 240);
+    border-radius: 5px ;
+    box-shadow: 0px 1px 2px;
+}
+.CP-task button{
+    margin-left: 38%;
+    position: absolute;
+    margin-top: -29px;
+
+    width: 160px;
+    padding: 5px;
+
+    border: none;
+    background-color: rgb(100, 100, 251);
+    border-radius: 5px ;
+    box-shadow: 1px 2px 3px;
+
+    color: #ffff;
+    font-weight: 600;
+
+}
+.CP-task button:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+.CP-table-scroll  table{
+    margin-top: 20px;
+    
+   
+}
+.CP-table-scroll thead th{
+ 
+
+    border: none;
+
+    
+    background-color:  rgb(233, 211, 254);
+    box-shadow: 0px 2px 3px;
+
+    
+    width: 120px;
+    padding: 5px;
+
+    
+
+    
+
+    
+}
+.CP-table-scroll thead{
+    position: sticky;
+    top:0px;
+    z-index: 100;
+}
+.CP-table-scroll{
+    margin-left: 17%;
+
+    max-height: 400px;  
+    overflow-y: auto;
+
+    
+}
+
+.CP-table-scroll table td{
+    border: none;
+    background-color:rgb(246, 201, 179);
+    box-shadow: 0px 2px 3px;
+
+    padding: 8px;
+    
+   
+   
+}
+
+.P-task h3{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px;
+    background-color:rgb(150, 229, 232);
+    width: 50%;
+
+    margin-left: 17%;
+    padding: 10px;
+}
+.P-task label{
+    margin-left: 17.5%;
+
+    font-size: 20px;
+}
+.P-task select{
+    margin-left: 20px;
+    padding: 5px;
+
+    border: none;
+    background-color: rgb(18, 196, 240);
+    border-radius: 5px ;
+    box-shadow: 0px 1px 2px;
+}
+.P-task button{
+    margin-left: 20px;
+    padding: 5px;
+
+    
+    border: none;
+    background-color: rgb(100, 100, 251);
+    border-radius: 5px ;
+    box-shadow: 1px 2px 3px;
+
+    color: #ffff;
+    font-weight: 600;
+}
+.P-task button:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+
+.P-table-scroll{
+    margin-left: 17%;
+    margin-top: 20px;
+}
+.P-table-scroll th{
+    border:none;
+    background-color:rgb(150, 229, 232);
+    box-shadow: 0px 2px 3px;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.P-table-scroll td{
+    border: none;
+    background-color:rgb(246, 201, 179);
+    box-shadow: 0px 2px 3px;
+
+    padding: 8px;
+}
+
+
+
+
+
+
+
+.pro{
+    margin-left: 270px;
+    margin-top: 25px;
+
+}
+.p-name{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    font-size: 20px;
+    padding: 5px;
+    color: blueviolet;
+
+    
+}
+.pro h4{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(166, 243, 243);
+    box-shadow: 1px 3px 5px;
+
+    padding: 5px;
+    padding-left: 10px;
+
+    font-size: 20px;
+
+    margin-left: -15px;
+    margin-bottom: -10px;
+  
+}
+.p-name p1{
+    margin-left: 20px;
+}
+.p-details{
+    margin-top: -5px;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: -5px;
+
+    padding: 5px;
+    color: blueviolet;
+   
+
+
+}
+
+.p-details p3,.p-details p4{
+    padding-left: 10px;
+    box-shadow: 0px 1px 2px;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+}
+.p-name p{
+    padding-left: 10px;
+    border: none;
+    box-shadow: 0px 1px 2px;
+    width: 150px;
+    border-radius: 5px;
+    
+    
+    
+}
+.p-details p3:hover,.p-details p4:hover{
+    background-color: blue;
+    border-radius: 5px;
+    
+    width: 150px;
+    color: #ffff;
+    cursor: pointer;
+
+   
+
+}
+.account{
+    display: flex;
+    gap: 70px;
+    margin-bottom: 20px;
+
+    color: blueviolet;
+    
+}
+.account p2{
+    border: 1px solid black;
+    border: none;
+    box-shadow: 0px 1px 2px;
+
+    width: 150px;
+
+    padding-left: 10px;
+    border-radius: 5px;
+
+   
+}
+.account p21{
+    margin-left: -38px;
+    
+}
+.account p22{
+    margin-left: -38px;
+    color: green;
+    font-weight: 600;
+}
+
+.change-pass{
+    border: 1px solid black;
+    box-shadow: 0px 1px 8px;
+    border-color:rgb(217, 249, 250) ;
+    border-radius: 5px;
+
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+    width: 250px;
+
+    margin-left: 300px;
+    margin-top: -50px;
+
+    background-color:rgb(217, 249, 250);
+
+    display: none;
+}
+.change-pass p{
+    margin-left: 230px;
+    margin-top: 4px;
+
+    width: 15px;
+    height: 18px;
+
+    border: none;
+    background-color: rgb(241, 174, 174);
+    box-shadow: 1px 2px 2px;
+    border-radius: 2px;
+
+    font-weight: 600;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+}
+.change-pass p:hover{
+    background-color: red;
+}
+.change-pass input{
+    border-radius: 5px;
+    border: none;
+
+    background-color: rgb(234, 215, 251);
+    box-shadow: 0px 1px 1px;
+    padding: 5px;
+}
+.change-pass button{
+    width: 175px;
+
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(156, 156, 242);
+
+    font-weight: 600;
+
+    padding: 4px;
+
+    cursor: pointer;
+}
+.change-pass button:hover{
+    background-color: blue;
+    color: #ffff;
+}
+
+
+
+
+
+.delete-account{
+    border:1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 1px 8px;
+    border-color:rgb(217, 249, 250) ;
+    background-color:rgb(217, 249, 250);
+
+    width:30%;
+    margin-left: 250px;
+
+    display: none;
+    
+
+    
+    
+}
+.delete-account p{
+    margin-left: 355px;
+    margin-top: 3px;
+
+    width: 15px;
+    height: 18px;
+
+    border: none;
+    background-color: rgb(241, 174, 174);
+    box-shadow: 1px 2px 2px;
+    border-radius: 2px;
+
+    font-weight: 600;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+
+}
+.delete-account p:hover{
+    background-color: red;
+}
+.delete-account p1{
+    margin-top: 20px;
+    
+
+    display: flex;
+    justify-content: center;
+}
+
+.delete-account p1 span{
+    margin-left: 8px;
+
+    margin-right: 5px;
+    color: red;
+    font-weight: 600;
+}
+.delete-account button{
+    margin-left: 50px;
+    margin-bottom: 20px;
+
+    width: 100px;
+
+    border: none;
+    border-radius: 5px;
+
+    box-shadow: 1px 2px 8px;
+    font-weight: 600;
+    color: black;
+
+    
+
+
+}
+.no-btn{
+    background-color:rgb(171, 171, 248) ;
+    
+}
+.yes-btn{
+    background-color: rgb(241, 111, 111);
+    
+   
+}
+.no-btn:hover{
+    background-color:blue;
+    cursor: pointer;
+
+    color: #ffff;
+
+}
+.yes-btn:hover{
+    background-color: red;
+    cursor: pointer;
+
+    color: #ffff;
+}
+
+
+
+
+
+.update-success-box{
+    border:none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px;
+    background-color: rgb(137, 244, 137);
+    width: 25%;
+
+    display: flex;
+    
+    flex-direction: column;
+    
+    text-align: center;
+    height: 90px;
+
+    margin-left: 22%;
+    padding-top: 10px;
+
+    display: none;
+
+
+    
+}
+.update-fail-box{
+    border:none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px;
+    background-color: rgb(137, 244, 137);
+    width: 25%;
+
+    display: flex;
+    
+    flex-direction: column;
+    
+    text-align: center;
+    height: 90px;
+
+    margin-left: 22%;
+    padding-top: 10px;
+
+    display: none;
+
+
+    
+}
+
+.update-success-box p{
+    border:none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px;
+    background-color: #ffff;
+    color: black;
+
+    font-weight: 600;
+
+
+    width: 250px;
+    margin-left: 30px;
+   
+   
+}
+.update-fail-box p{
+    border:none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px;
+    background-color: #ffff;
+    color: black;
+
+    font-weight: 600;
+
+
+    width: 200px;
+    margin-left: 50px;
+    
+   
+}
+.update-success-box button{
+    border:none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px;
+    background-color:blue;
+    color: #ffff;
+
+    font-weight: 600;
+    
+
+    width: 249px; 
+}
+.update-fail-box button{
+    border:none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px;
+    background-color:blue;
+    color: #ffff;
+
+    font-weight: 600;
+
+
+    width: 200px;
+    margin-left: -5px;
+}
+.update-success-box button:hover, .update-fail-box button:hover{
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.delete-account-success-box{
+    border:none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px;
+    background-color: rgb(137, 244, 137);
+    width: 25%;
+
+    display: flex;
+    
+    flex-direction: column;
+    
+    text-align: center;
+    height: 90px;
+
+    margin-left: 22%;
+    padding-top: 10px;
+
+    display: none;
+
+    
+}
+.delete-account-success-box p{
+    border:none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px;
+    background-color: #ffff;
+    color: black;
+
+    font-weight: 600;
+
+
+    width: 250px;
+    margin-left: 30px;
+}
+
+.delete-account-success-box button{
+    border:none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px;
+    background-color:blue;
+    color: #ffff;
+
+    font-weight: 600;
+    margin-left: 30px;
+
+    width: 249px; 
+    cursor: pointer;
+}
+.delete-account-success-box button:hover{
+    color: black;
+    cursor: pointer;
+}
+
+
+.delete-account-fail-box{
+    border:none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px;
+    background-color: rgb(137, 244, 137);
+    width: 25%;
+
+    display: flex;
+    
+    flex-direction: column;
+    
+    text-align: center;
+    height: 90px;
+
+    margin-left: 22%;
+    padding-top: 10px;
+
+    display: none;
+
+    
+}
+.delete-account-fail-box p{
+    border:none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px;
+    background-color: #ffff;
+    color: black;
+
+    font-weight: 600;
+
+
+    width: 250px;
+    margin-left: 30px;
+}
+
+.delete-account-fail-box button{
+    border:none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px;
+    background-color:blue;
+    color: #ffff;
+
+    font-weight: 600;
+  
+
+    width: 249px; 
+    cursor: pointer;
+}
+.delete-account-fail-box button:hover{
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.About-us{
+    display: none;
+    margin-left: 16.3%;
+    margin-top: 20px;
+
+    
+    padding-left: 20px;
+    height: 620px;
+
+    border: none;
+    box-shadow: 1px 2px 4px;
+
+    overflow-y: hidden;
+
+}
+.About-us h3{
+    border: none;
+    background-color: rgb(131, 234, 238);
+    box-shadow: 1px 2px 4px;
+
+    padding-left: 20px;
+
+    margin-left: -20px;
+    margin-top: 0px;
+}
+.About-us h4{
+    border: none;
+    background-color: rgb(228, 211, 245);
+    box-shadow: 1px 2px 4px;
+
+    padding-left: 20px;
+    width: 40%;
+
+    margin-left: -5px;
+    margin-top: 0px;
+}
+.About-us p,.About-us p4,.About-us p5,.About-us p6,.About-us p7,.About-us p8,.About-us p9{
+    margin-left: 20px;
+    margin-top: -8px;
+}
+.About-us p3{
+    margin-left: 20px;
+    
+
+
+}

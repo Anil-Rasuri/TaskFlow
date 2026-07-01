@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🡻 TaskFlow Login</title>
+    <link rel="stylesheet" href="task_manager.css">
+</head>
+    <body>
+        <div class="login-layout">
+            <img src="images/TM_logo.png" class="logo">
+            <h2>TaskFlow</h2>
+            <p>Organize Your Day</p>
+            <div class="login-inside">
+                <h2>➜]</h2>
+                <h4>Login</h4>
+                <p>WELCOME BACK TO<span style="color: blue;"> TASKFLOW</span></p><br>
+                
+                <label>Username</label><br>
+                <input type="text" placeholder="" id="username-login"><br><br>
+                <label>Password</label><br>
+                
+                
+                <input type="password" placeholder="" id="pass-login_input">
+                <img src="images/password_hidden.png" class="pass-login" id="pass-login-id">
+                <img src="images/password_show.png" class="pass-login-2" id="pass-login-2-id">
+                
+                <button type="button" id="login-btn">Login</button>
+                <br><br>
+                
+                <p style="font-weight: 500;">I Don't have an Account,<span style="color:blue; margin-left: 5px; font-weight: bold;"><a href="Register.html" style="text-decoration: none; color: blue;">Register</a></span></p>
+                
+                <div class="login-success" id="login-success">
+                    <p>Login Successful</p>
+                    <h4 id="next-btn">➟</h4>
+                </div>
+            
+                <div class="login-fail" id="login-fail">
+                    <p id="login-msg" class="input-box">Login Failed!</p>
+                    <h6 id="close-box">OK</h6>
+                </div>
+
+
+            </div>
+        </div>
+        <script src="Login.js"></script>
+    </body>
+</html>

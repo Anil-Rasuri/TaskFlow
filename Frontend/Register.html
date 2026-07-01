@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🎯 TaskFlow Register</title>
+    <link rel="stylesheet" href="task_manager.css">
+</head>
+    <body>
+        
+        <div class="register-outsidebox">
+            <img src="images/TM_logo.png">
+            <h2>TaskFlow</h2>
+            <p>Organize Your Day</p>
+        </div>
+            <div class="register-insidebox">
+                <h3>👤</h3>
+                <h2>CREATE YOUR <span style="color: blue;">TASKFLOW</span> ACCOUNT</h2>
+
+                <label>Full Name</label><br>
+                <input type="text" placeholder="" id="user-name"><br><br>
+                <label style="margin-right:68% ;">Password</label><br>
+                <input type="password" placeholder="" id="user-password"><br><br>
+                <label style="margin-right: 48%;">Confirm Password</label><br>
+                <input type="password" placeholder="" id="user-confirm_password">
+                <img src="images/password_hidden.png" class="eye-image" id="eye-close">
+                <img src="images/password_show.png" class="eye-image-2" id="eye-open"> <br><br>
+
+                <button type="button" id="user-signup">Sign Up</button>
+
+                <div class="or">
+                    <p>━━━━━━━</p>
+                    <span>or</span>
+                    <p>━━━━━━━</p>
+                </div>
+                <p>Already have an account?<span style="font-size: 13px; margin-left: 5px; font-weight: bold;"><a href="Login.html" style="text-decoration: none; color: blue;">Log in</a> </span></p>
+                <p style="font-size: small; margin-top: -10px;">Terms of Service Privacy Policy</p>
+
+            </div>
+            <div class="register-success" id="register-success-box">
+                <p>Registration Successful</p>
+                <button id="ok-btn-success">OK</button>
+                <button><a href="Login.html" style="text-decoration: none; color: black;"> Go To Login</a></button>
+            </div>
+            
+            <div class="register-fail" id="register-fail-box">
+                <p id="fail-message">Registration Failed!</p>
+                <button id="ok-btn-fail">OK</button>
+            </div>
+
+        <script src="Register.js"></script>
+    </body>
+</html>

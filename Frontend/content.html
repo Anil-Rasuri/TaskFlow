@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+          📊 Dashboard TF
+        </title>
+         <link rel="stylesheet" href="content.css">
+    </head>
+    <body>
+        <div class="total-layout">
+        <div class="sidebar-layout">
+            <div class="sidebar-inside">
+                <img src="images/TM_logo.png">
+                <h2>TaskFlow</h2>
+                <p>Organize Your Day</p>
+                <div class="options" id="options">
+                    <p1 id="dash"><img src="images/dashboardemoji.png" style="width: 17px; font-weight: bolder; margin-left: -2px; margin-top: 2px; "> <span style="margin-left: 32px; margin-top: -16px; " >Dashboard</span></p1><br><br>
+                    <p1 id="AD" style="margin-left: 30px;">✚<span style="margin-left: 32px; margin-top: -19px;">Add Task</span></p1><br><br>
+                    <p1 id="VT" style="margin-left: 30px;">🕶<span style="margin-left: 30px; margin-top: -19px;">View Tasks</span></p1><br><br>
+                    <p1 id="MT">🛠<span style="margin-left: 30px; margin-top: -19px;">Manage Tasks</span></p1><br><br>
+                    <p1 id="CP" style="font-size: 13px;">✔⚠ <span style="margin-left:30px; margin-top: -25px; font-size: 16px;">Completed & Pending Tasks</span></p1><br><br>
+                    <p1 id="Pro" style="font-size: 14px;">👤 <span style="margin-left:30px; margin-top: -16px; font-size: 16px;">Profile</span></p1><br><br>
+                    <p1 id="AU" style="font-size: 14px; margin-left: 35px;">ⓘ <span style="margin-left:25px; margin-top: -17px; font-size: 16px;">About us</span></p1><br><br>
+                </div>
+
+                <div class="logout-section">
+                    <img src="images/logout.png" style="width:17px ;">
+                    <p3 id="logout">Logout</p3>
+                </div>
+
+                <div class="sidebar-downside">
+                    <p3>Stay Organized,</p3>
+                    <p2>Stay Producted</p2>
+                    <img src="images/content_image.png">
+                </div>
+                
+                
+            </div>
+        </div>
+        
+
+        <div class="header-bar">
+            <h3 >☰</h3>
+
+            <div class="header-right">
+                <p class="header-bar-profile">👤</p>
+                <p1 id="profile-name" class="header-bar-name">
+                    AnilKumar
+                </p1>
+            </div>
+        </div>
+      
+        
+        
+    
+    <div class="total-content">
+        <div id="A" class="A">
+        <div class="dashboard-sections">
+            <h2>Dashboard</h2>
+            <p>WELCOME,</p>
+            <p1 id="dashboard-sections">AnilKumar</p1>
+        </div>
+        <div class="sections">
+            <h3>📋</h3>
+            <h3>✔️</h3>
+            <h3>⌛</h3> 
+            <h3 style="height: 150px;">⭐</h3>
+            
+        </div>
+
+        <div class="headings">
+            <p1>Total Tasks</p1>
+            <p2>Completed Tasks</p2>
+            <p3>Pending Tasks</p3>
+            <p4>Priority Breakdown</p4>
+        </div>
+
+        
+            <p id="total-tasks" class="total-tasks">0</p>
+            <p id="com-tasks" class="com-tasks">0</p>
+            <p id="pen-tasks" class="pen-tasks">0</p>
+
+        <div class="priority">
+            <p4 >High <span style="margin-left: 40px;"> :</span>  <span id="High" style="margin-left: 10px; color: brown; font-weight: bold;">0></span>   </p4>
+            <p4>Medium <span style="margin-left: 18px;"> :</span>  <span id="Medium" style="margin-left: 10px; color: navy; font-weight: bolder;">0</span>  </p4>
+            <p4>Low <span style="margin-left: 43px;"> :</span>      <span id="Low" style="margin-left: 10px; color: green; font-weight: bold;">0</span>       </p4>
+        </div>
+        
+
+        <div class="urgent">
+            <h4>Urgent & Over Due Tasks</h4>
+            <div class="table-scr">
+                <table>
+                    <thead>
+                    <tr>
+                        <th id="Tasks">Task</th>
+                        <th id="Description">Description</th>
+                        <th id="Due">Due Date</th>
+                    </tr>
+                    </thead>
+                    <tbody id="urgent-body"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="bimage">
+            <img src="images/Dashboard_background.png">
+        </div>
+        </div>
+        </div>
+        
+
+
+
+        <div class="view-task" id="view-task">
+            <h3>All Tasks</h3>
+            <div class="change-status-box1" id="change-status-box1">
+                <p id="innertext">Status Changed!</p>
+                <button type="button" id="oook">OK</button>
+            </div>
+           
+            
+
+            <h4>🔍 Search Task <input type="text" placeholder="Search task by name" id="keyword"><button type="button" id="SEARCH">SEARCH</button><span style="margin-left: 30px; font-size: 25px;">|</span><span style="margin-left: 30px;">🔁 Change Status</span><input type="number" placeholder="Enter Task-id" id="id_to_change_status"><select id="select-status"><option val="">Status</option><option >completed</option><option>Pending</option></select><button type="button" id="Change-status">Change Status</button></h4>
+           
+           
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="id" style="width: 3%;">Id</th>
+                            <th id="task" style="width: 15%;">Task</th>
+                            <th id="des" style="width: 30%;">Description</th>
+                            <th id="creted_on" style="width: 10%;">Created on</th>
+                            <th id="creted_at" style="width: 10%;">Created at</th>
+                            <th id="due_date" style="width: 10%;">Due Date</th>
+                            <th id="pri">Priority</th>
+                            <th id="status">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="view-task-table"></tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="AD">
+        <div class="Add-task" id="Add-task">
+            <h3>Add Task</h3>
+
+            <label>Title</label><br>
+            <input id="title" type="text" placeholder=""><br><br>
+
+            <label>Description</label><br>
+            <input id="descrip" type="text" placeholder=""><br><br>
+
+            <label>Due Date</label><br>
+            <input id="duedate" type="date" placeholder=""><br><br>
+
+            <label>Priority</label><br>
+            <select id="HML">
+                <option value="" selected>---Select Priority---</option>
+                <option>High</option>
+                <option>Medium</option>
+                <option>Low</option>
+            </select><br><br>
+
+            <button type="button" id="AT-btn">Add Task</button>
+
+        </div>
+
+        <div class="AT-success-box" id="AT-success-box">
+            <p>Task Added Successfully!</p>
+            <P1 id="xs-box">x</P1>
+        </div>
+
+        <div class="AT-fail-box" id="AT-fail-box">
+            <p id="fail-message">Task Adding Failed!</p>
+            <P1 id="xf-box">x</P1>
+        </div>
+        </div>
+
+        <div class="manage" id="manage">
+            <h3>Update Task</h3>
+            <label>Enter Task-Id to Edit</label>
+            <input id="id-to-update" type="number" placeholder=""><br>
+
+            <div class="task-details">
+                <label >Title</label>
+                <input id="title-to-update" type="text" placeholder="" style="width: 150px ;"><br><br>
+                <label>Desription</label>
+                <input id="description-to-update" type="text" placeholder="" style="margin-left: 115px;  width: 350px;"><br><br>
+                 <label>Due Date</label>
+                <input id="duedate-to-update" type="date" placeholder="" style="margin-left: 125px; width: 150px;"><br><br>
+                <label>Priority</label>
+                <select id="priority-to-update" style="margin-left: 137px; width: 170px; padding: 5px; border-radius: 5px; border-radius: 5px;  border: none;background-color:  rgb(233, 211, 254);box-shadow: 0px 2px 3px;">
+                    <option value="">--SELECT  PRIORITY--</option>
+                    <option>High</option>
+                    <option>Medium</option>
+                     <option>Low</option>
+                </select><br><br>
+                <label>Status</label>
+                <select id="status-to-update" style="margin-left: 152px; width: 170px; padding: 5px; border-radius: 5px;  border: none;background-color:  rgb(233, 211, 254);box-shadow: 0px 2px 3px;">
+                    <option value="">--SELECT STATUS--</option>
+                    <option>Pending</option>
+                    <option>completed</option>
+                </select>
+                   <br><br>
+
+            <button type="button" id="button-to-update" >Update</button>
+            </div>
+
+            <div class="UT-success-box" id="UT-success-box">
+                <p>Task Updated Successfully!</p>
+                <P1 id="x-s-box">x</P1>
+            </div>
+
+            <div class="UT-fail-box" id="UT-fail-box">
+                <p id="fail-message">Task Update Failed!</p>
+                <P1 id="x-f-box">x</P1>
+            </div>
+            
+            
+
+            <div class="scr-table">
+                <table>
+                        <thead>
+                            <tr>
+                                <th id="id-u" style="width: 3%;">Id</th>
+                                <th id="task-u" style="width: 15%;">Task</th>
+                                <th id="des-u" style="width: 30%;">Description</th>
+                                <th id="creted_on-u" style="width: 10%;">Created on</th>
+                                <th id="creted_at-u" style="width: 10%;">Created at</th>
+                                <th id="due_date-u" style="width: 10%;">Due Date</th>
+                                <th id="pri-u">Priority</th>
+                                <th id="status-u">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="view-task-to-update"></tbody>
+                    </table>
+            </div>
+            
+        
+
+            <div class="delete-task" id="delete-task">
+                <h3>Delete Task</h3>
+                <label>Enter Task-Id to Delete Task</label>
+                <input type="number" placeholder="" id="delete-task-id"><br><br>
+
+                <button type="button" id="delete_task_button">Delete</button>
+            </div>
+            
+
+            <div class="Delete-success-box" id="Delete-success-box">
+                <p>Task Deleted Successfully!</p>
+                <P1 id="Delete-s-box">x</P1>
+            </div>
+
+            <div class="Delete-fail-box" id="Delete-fail-box">
+                <p id="delete-fail-message">Task Delete Failed!</p>
+                <P1 id="Delete-f-box">x</P1>
+            </div>
+            
+        </div>
+
+
+
+
+
+        <div class="CP-task" id="CP-task">
+            <h3>Completed & Pending Tasks</h3>
+            <label>Status:</label>
+            <select id="status-select">
+                <option value="">---SELECT-STATUS---</option>
+                <option >completed</option>
+                <option >Pending</option>
+            </select>
+            <button type="button" id="Get-Tasks">Get Tasks</button>
+
+            <div class="CP-table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="cp-id" style="width: 3%;">Id</th>
+                            <th id="cp-task" style="width: 15%;">Task</th>
+                            <th id="cp-des" style="width: 30%;">Description</th>
+                            <th id="cp-creted_on" style="width: 10%;">Created on</th>
+                            <th id="cp-creted_at" style="width: 10%;">Created at</th>
+                            <th id="cp-due_date" style="width: 10%;">Due Date</th>
+                            <th id="cp-pri">Priority</th>
+                            <th id="cp-status">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cp-task-table"></tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="pro" id="pro">
+            <h4>User Profile</h4><br>
+            <div class="p-name">
+               
+                <p>Username<span style="margin-left: 100px;">:</span></p>
+                <p1 id="user_name_display" style="color: blue; font-weight:bold ;"></p1>
+            </div>
+            <div class="p-details">
+                <div class="account">
+                    <p2>Account Status</p2>
+                    <p21>:</p21>
+                    <p22>Active</p22><br>
+                    </div>
+                <p3 id="change-p">Change Password</p3><br>
+                
+                <p4 id="delete-account-btn">Delete Account</p4>
+            </div>
+
+            <div class="change-pass" id="change-pass">
+                <p id="close-pass-change">X</p>
+
+                <label>Enter Current Password</label>
+                <input type="text" placeholder="" id="present_pass"><br><br>
+                <label>Create New Password</label>
+                <input type="text" placeholder="" id="new_pass"><br><br>
+
+                <button type="button" id="UPDATE-password">Update Password</button>
+            </div>
+            <div class="delete-account" id="delete-account">
+                <p id="close-delete-account">X</p>
+
+                <p1>Are You Sure You Wanna,<span>Delete Your Account</span> ?</p1><br>
+
+                <button type="button" class="no-btn" id="no">NO</button>
+                <button type="button" class="yes-btn" id="delete-yes-btn">Yes, Delete</button>
+            </div>
+            <div class="delete-account-success-box" id="delete-account-success-box">
+                <p id="delete-m">Account Deleted <span style="color: gray;"> Successfully!</span></p>
+                <button type="button" id="delete-s-b">OK</button>
+            </div>
+
+            <div class="delete-account-fail-box" id="delete-account-fail-box">
+                <p id="delete-m">Account Deleted <span style="color: red;">Failed!</span></p>
+                <button type="button" id="delete-f-b">OK</button>
+            </div>
+
+
+            <div class="update-success-box" id="update-success-box">
+                <p>Password Change <Span style="color: green;">Successfull!</Span></p>
+                <button type="button" id="oks-b">OK</button>
+            </div>
+            <div class="update-fail-box" id="update-fail-box">
+                <p>Password Change <Span style="color: red;">Failed!</Span></p>
+                <button type="button" id="okf-b">OK</button>
+            </div>
+        </div>
+
+
+
+        <div class="About-us" id="About-us">
+            <h3>About Us</h3>
+            <h4 style="margin-bottom: 20px;">Welcome to TaskFlow</h4>
+
+            <p>TaskFlow is a smart and intuitive task management platform designed to help individuals organize their daily work, stay productive, and achieve their goals with ease. Whether you're managing personal tasks, academic assignments, or professional projects, TaskFlow provides a simple and efficient way to keep everything in one place.</p>
+            <p style="margin-top: -15px;">Our mission is to make task management effortless through a clean interface, secure user experience, and powerful productivity features.</p>
+            <h4 style="margin-bottom: 10px;">Our Features</h4>
+            <p3>✔ Create and organize tasks effortlessly</p3><br>
+            <p3>✔ Set task priorities (High, Medium, Low)</p3><br>
+            <p3>✔ Track Pending and Completed tasks</p3><br>
+            <p3>✔ View overdue and urgent tasks</p3><br>
+            <p3>✔ Interactive dashboard with task statistics</p3><br>
+            <p3>✔ Secure user authentication and account management</p3><br>
+            <p3>✔ Fast and responsive user interface</p3><br>
+
+            <h4 style="margin-top: 15px; margin-bottom: 15px;">Why Choose TaskFlow?</h4>
+            <p4>TaskFlow is built with simplicity, security, and performance in mind.</p4><br> <p4>Our goal is to provide users with a reliable platform that helps them manage their time effectively and focus on what matters most.</p4><br>
+            <p5>Whether you're a student, freelancer, or working professional, TaskFlow adapts to your workflow and keeps your tasks organized every day.</p5>
+
+            <h4 style="margin-top: 15px;  margin-bottom: 15px;">Our Vision</h4>
+            <p6>To empower users with a modern, secure, and user-friendly task management solution that promotes productivity, organization, and better time management.</p6>
+
+            <h4 style="margin-top: 15px;  margin-bottom: 15px;">Contact Us</h4>
+            <p7>📧 Email: support@taskflow.com</p7><br>
+            <P8>📞 Phone: +91 9346284568</P8><br>
+            <P9>📍 Location: Hyderabad, India</p9><br>
+
+            <h5 style="margin-top: 15px;">TaskFlow © 2026 | Organize Today. Achieve Tomorrow.</h5>
+        </div>
+
+
+        
+    </div>
+
+    <script src="content.js"></script>
+    </body>
+</html>

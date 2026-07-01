@@ -1,0 +1,454 @@
+
+body{
+    background-color: rgb(219, 247, 247);
+
+}
+.register-outsidebox img{
+    width: 150px;
+
+    margin-left: 34%;
+    margin-bottom: -8%;
+
+}
+.register-outsidebox h2{
+    margin-left: 43.5%;
+    font-size: 30px;
+
+    margin-top: 25px;
+}
+.register-outsidebox p{
+    margin-left: 43.5%;
+    margin-top: -30px;
+}
+.register-insidebox h3{
+    font-size: 40px;
+    margin-bottom: -40px;
+    margin-left: -5px;
+}
+.register-insidebox{
+    border: none;
+    background-color: #e0e3f0;
+    box-shadow: 0px 5px 12px;
+
+    text-align: center;
+    width: 20%;
+
+    margin-left: 35%;
+    margin-top: 3%;
+
+    height: 530px;
+
+    background-image: url(images/backimag_register.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180px;
+    background-position-y: 99.95%;
+}
+.register-insidebox label{
+   margin-right: 65%;
+}
+.register-insidebox input{
+    
+    width: 85%;
+    margin-left: 5px;
+    margin-top: 5px;
+
+    height: 25px;
+
+    background-color: rgb(175, 175, 246);
+
+    border: none;
+    border-radius: 5px;
+    
+}
+.register-insidebox h2{
+    margin-bottom: 30px;
+   
+    
+    padding-top: 32px;
+
+    font-size: 15px;
+    color: black;
+    font-weight: bolder;
+}
+.register-insidebox button{
+    width: 87%;
+    margin-left:3px;
+
+    margin-top: 20px;
+
+    background-color: rgb(37, 37, 51);
+    color: #ffffff;
+
+    border: none;
+    border-radius: 5px;
+
+    height: 30px;
+}
+.register-insidebox button:hover{
+    background-color: blue;
+    color: #ffff;
+    cursor: pointer;
+
+}
+
+.or{
+    display: flex;
+    align-items: center;
+
+    margin-left: 28px;
+
+    gap:7px;
+
+    margin-bottom: -25px;
+}
+.register-success{
+    
+    display:none;
+    position: relative;
+
+    border: 0.5px solid rgb(100, 238, 93);
+    background-color: rgb(64, 218, 64);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px green;
+
+    width: 15.5%;
+    height: 100px;
+
+    margin-top: -10%;
+    margin-left: 37.4%;
+
+}
+.register-success p{
+    margin-left: 25px; 
+    font-size: 18px;
+
+    margin-top: 30px;
+
+    font-weight: bold;
+    font-style:italic;
+    color: rgb(0, 128, 28);
+    background-color: rgb(166, 231, 166);
+
+    box-shadow: 0px 5px 12px;
+    width: 180px;
+    padding-left: 4px;
+    border-radius: 5px;
+}
+
+
+.register-fail{
+    
+    display:none;
+    position: relative;
+
+    border: 0.5px solid rgb(100, 238, 93);
+    background-color: rgb(64, 218, 64);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px green;
+
+    width: 15.5%;
+    height: 100px;
+
+    margin-top: -8%;
+    margin-left: 37.4%;
+
+}
+
+
+.register-fail p{
+    margin-left: 18px; 
+    font-size: 18px;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+    font-style:italic;
+    color: #ffffff;
+    background-color: red;
+
+    box-shadow: 0px 5px 12px;
+    width: 180px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    border-radius: 5px;
+}
+.register-success button{
+    margin-top: 5px;
+    margin-left: 37px;
+
+    font-weight: bold;
+    background-color: rgb(63, 202, 240);
+   
+    box-shadow: 0px 3px 4px black;
+    color: black;
+    border-radius: 5px;
+    border: none;
+
+
+}
+.register-success button:hover{
+    background-color: blue;
+}
+
+.register-fail button{
+    margin-top: -10px;
+    margin-left: 88px;
+
+    font-weight: bold;
+
+    width: 50px;
+
+    background-color: rgb(63, 202, 240);
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+
+
+}
+.register-fail button:hover{
+    background-color: blue;
+}
+.eye-image{
+    display: block;
+    width: 15px;
+
+    position: absolute;
+
+    margin-left: 17.1%;
+    margin-top: -90px;
+}
+.eye-image-2{
+    display: none;
+    width: 15px;
+
+    position: absolute;
+
+    margin-left: 17.1%;
+    margin-top: -90px;
+}
+
+
+
+.logo{
+    width: 150px;
+
+    margin-left: 34%;
+    margin-bottom: -8%;
+
+}
+.login-layout h2{
+    margin-left: 43.5%;
+    font-size: 30px;
+
+    margin-top: 25px;
+}
+.login-layout p{
+    margin-left: 43.5%;
+    margin-top: -30px;
+}
+
+
+
+.login-inside{
+    border: none;
+    background-color: #e0e3f0;
+
+    box-shadow: 0px 5px 12px;
+
+    text-align: center;
+    width: 20%;
+
+    margin-left: 35%;
+    margin-top: 3%;
+
+    height: 474px;
+
+    
+
+    background-image: url(images/backimage_login.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 150px;
+    background-position-y: 102.1%;
+    background-position-x: 104%;
+    
+    
+}
+.login-inside label{
+    margin-right: 65%;
+}
+.login-inside input{
+    width: 85%;
+    margin-left: 5px;
+    margin-top: 5px;
+
+    height: 25px;
+
+    background-color: rgb(175, 175, 246);
+
+    border: none;
+    border-radius: 5px;
+}
+.login-inside button{
+    width: 87%;
+    margin-left:3px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    background-color: rgb(37, 37, 51);
+    color: #ffffff;
+
+    border: none;
+    border-radius: 5px;
+
+    height: 30px;
+}
+.login-inside h2{
+    padding-top: 20px;
+    margin-left: -20px;
+}
+.login-inside h4{
+    margin-top: -25px;
+    margin-left: -10px;
+    font-size: 30px;
+}
+.login-inside p{
+    font-size: 13px;
+    margin-top: -25px;
+
+    margin-left: 0px;
+
+}
+
+
+.pass-login{
+    display: block;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 17.2%;
+   
+    
+    width: 15px;
+   
+    cursor: pointer;
+}
+.pass-login-2{
+    display: none;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 17.2%;
+   
+    
+    width: 15px;
+   
+    cursor: pointer;
+}
+
+.login-success{
+
+    display: none;
+    border: 0.1px solid rgb(0, 0, 0);
+    border-color: green;
+
+    width: 95%;
+    height: 80px;
+
+    margin-left: 6px;
+    margin-top: -10px;
+
+    background-color: rgb(64, 218, 64);
+    border-radius: 5px;
+    box-shadow: 0px 4px 3px;
+
+    
+    
+
+}
+.login-success p{
+    
+    margin-left: 65px;
+    margin-top: 25px;
+
+    width:50% ;
+    height: 15px;
+
+    font-weight: bold;
+    font-size: 14.5px;
+    color: green;
+
+
+    background-color: rgb(166, 231, 166);
+    border-radius: 5px;
+    box-shadow: 0px 4px 12px;
+
+   padding: 5px;
+}
+.login-success h4{
+    margin-top: -20px;
+    margin-left: 86%;
+   
+    cursor: pointer;
+}
+
+.login-fail{
+    display: none;
+    border: 0.1px solid rgb(0, 0, 0);
+    border-color: green;
+
+    width: 95%;
+    height: 101px;
+
+    margin-left: 6px;
+    margin-top: -10px;
+
+    background-color: rgb(64, 218, 64);
+    border-radius: 5px;
+
+
+    
+}
+.login-fail p{
+    position: relative;
+   
+   
+
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    box-shadow: 0px 3px 5px black;
+    font-weight: bold;
+    color: #ffff;
+
+    width: 120px;
+
+    margin-left: 65px;
+    margin-top:20px ;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+
+}
+.login-fail h6{
+    position: relative;
+   
+
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(63, 202, 240);
+    box-shadow: 0px 3px 5px;
+    
+    margin-top: 0px;
+    margin-left: 120px;
+    
+    width: 40px;
+}
