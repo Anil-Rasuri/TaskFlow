@@ -15,6 +15,14 @@ from typing import Optional
 
 from fastapi.middleware.cors import CORSMiddleware
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv("Backend/.env")
+
+DATABASE_URL = os.getenv("DATABASE_URL")
+SECRET_KEY = os.getenv("SECRET_KEY")
+
 
 
 
@@ -30,13 +38,12 @@ app.add_middleware(
 )
 
 
+def get_connection():
+    return psycopg2.connect(DATABASE_URL)
 
-con=psycopg2.connect(
-    host="localhost",
-    database="Task_Manager",
-    user="postgres",
-    password="postgres"
-)
+
+
+con=get_connection()
 con.close()
 
 
@@ -57,12 +64,7 @@ def User_Registration(user:RegisterUser):
     if user.password != user.confirm_password:
         return{"Error":"Passwords don't Match"}
     
-    con = psycopg2.connect(
-        host="localhost",
-        database="Task_Manager",
-        user="postgres",
-        password="postgres"
-    )
+    con = get_connection()
     cursor = con.cursor()
 
     cursor.execute("SELECT id FROM users WHERE username=%s",(user.username,))
@@ -108,12 +110,7 @@ def verify_token(token:str):
 
 @app.get("/Login")
 def User_Login(username:str, password:str):
-    con=psycopg2.connect(
-        host="localhost",
-        database="Task_Manager",
-        user="postgres",
-        password="postgres"
-    )
+    con=get_connection()
     cursor=con.cursor()
 
     cursor.execute("SELECT id,username,password FROM users WHERE username=%s",(username,))
@@ -148,12 +145,7 @@ def Add_task(task:AddTask, credentials:HTTPAuthorizationCredentials=Depends(secu
         return{"Error":"Invalid Token"}
     user_id=payload["user_id"]
 
-    con=psycopg2.connect(
-        host="localhost",
-        database="Task_Manager",
-        user="postgres",
-        password="postgres"
-    )
+    con=get_connection()
     cursor=con.cursor()
     
     cursor.execute("INSERT INTO tasks(user_id,title,description,priority,due_date) VALUES (%s,%s,%s,%s,%s)", (user_id, task.title, task.description, task.priority, task.due_date))
@@ -174,12 +166,7 @@ def View_Tasks(credentials:HTTPAuthorizationCredentials=Depends(security)):
     
     user_id=payload["user_id"]
     
-    con=psycopg2.connect(
-        host="localhost",
-        database="Task_Manager",
-        user="postgres",
-        password="postgres"
-    )
+    con=get_connection()
     cursor=con.cursor()
 
     cursor.execute("SELECT id,title,description,priority,due_date,status,created_date,created_time FROM tasks WHERE user_id=%s ORDER BY id DESC",(user_id,))
@@ -216,12 +203,7 @@ def View_Task(id:int, credentials:HTTPAuthorizationCredentials=Depends(security)
     
     user_id=payload["user_id"]
     
-    con=psycopg2.connect(
-        host="localhost",
-        database="Task_Manager",
-        user="postgres",
-        password="postgres"
-    )
+    con=get_connection()
     cursor=con.cursor()
 
     cursor.execute("SELECT id,title,description,priority,due_date,status,created_date,created_time FROM tasks WHERE user_id=%s AND id=%s",(user_id,id))
@@ -262,12 +244,7 @@ def Delete_Task(id:int, credentials:HTTPAuthorizationCredentials=Depends(securit
         return{"Error":"Invalid Token"}
     user_id=payload["user_id"]
 
-    con=psycopg2.connect(
-        host="localhost",
-        database="Task_Manager",
-        user="postgres",
-        password="postgres"
-    )
+    con=get_connection()
     cursor=con.cursor()
 
     cursor.execute("SELECT id FROM tasks WHERE id=%s AND user_id=%s",(id,user_id))
@@ -298,12 +275,7 @@ def Update_Task(id:int, update:UpdateTask, credentials:HTTPAuthorizationCredenti
     
     user_id=payload["user_id"]
 
-    con=psycopg2.connect(
-        host="localhost",
-        database="Task_Manager",
-        user="postgres",
-        password="postgres"
-    )
+    con=get_connection()
     cursor=con.cursor()
 
     cursor.execute("SELECT title, description, priority, due_date, status FROM tasks WHERE id=%s AND user_id=%s ", (id,user_id))
@@ -353,12 +325,7 @@ def User_Dashboard(credentials:HTTPAuthorizationCredentials=Depends(security)):
     
     user_id=payload["user_id"]
     
-    con=psycopg2.connect(
-        host="localhost",
-        database="Task_Manager",
-        user="postgres",
-        password="postgres"
-    )
+    con=get_connection()
     cursor=con.cursor()
 
     cursor.execute("SELECT COUNT(title), COUNT(CASE WHEN status='completed' THEN 1 END), COUNT(CASE WHEN status='Pending' THEN 1 END) FROM tasks WHERE user_id=%s",(user_id,))
@@ -382,12 +349,7 @@ def User_Dashboard(credentials:HTTPAuthorizationCredentials=Depends(security)):
     
     user_id=payload["user_id"]
     
-    con=psycopg2.connect(
-        host="localhost",
-        database="Task_Manager",
-        user="postgres",
-        password="postgres"
-    )
+    con=get_connection()
     cursor=con.cursor()
 
     cursor.execute("SELECT title,description,due_date,status FROM tasks WHERE user_id=%s AND status !='completed' AND due_date <=CURRENT_DATE ORDER BY due_date ASC ",(user_id,))
@@ -418,12 +380,7 @@ def Priority_Breakdown(credentials:HTTPAuthorizationCredentials=Depends(security
     
     user_id=payload["user_id"]
     
-    con=psycopg2.connect(
-        host="localhost",
-        database="Task_Manager",
-        user="postgres",
-        password="postgres"
-    )
+    con=get_connection()
     cursor=con.cursor()
 
     cursor.execute("SELECT priority, COUNT(id) FROM tasks WHERE user_id=%s GROUP BY priority",(user_id,))
@@ -467,12 +424,7 @@ def User_Profile(credentials:HTTPAuthorizationCredentials=Depends(security)):
     
     user_id=payload["user_id"]
 
-    con=psycopg2.connect(
-        host="localhost",
-        database="Task_Manager",
-        user="postgres",
-        password="postgres"
-    )
+    con=get_connection()
     cursor=con.cursor()
 
     cursor.execute("SELECT  username,created_at FROM users WHERE id=%s", (user_id,))
@@ -499,12 +451,7 @@ def Change_Password(password_section:ChangePassword, credentials:HTTPAuthorizati
     
     user_id=payload["user_id"]
 
-    con=psycopg2.connect(
-        host="localhost",
-        database="Task_Manager",
-        user="postgres",
-        password="postgres"
-    )
+    con=get_connection()
     cursor=con.cursor()
 
     cursor.execute("SELECT password FROM users WHERE id=%s", (user_id,))
@@ -544,12 +491,7 @@ def Change_Status(id:int, status_button:ChangeStatus, credentials:HTTPAuthorizat
     if status_codes not in ["Pending", "completed"]:
         return {"Error":"Invalid status value"}
 
-    con=psycopg2.connect(
-        host="localhost",
-        database="Task_Manager",
-        user="postgres",
-        password="postgres"
-    )
+    con=get_connection()
     cursor=con.cursor()
 
     cursor.execute("SELECT title, description, priority, due_date, status FROM tasks WHERE id=%s AND user_id=%s ", (id,user_id))
@@ -580,12 +522,7 @@ def Delete_Account(credentials:HTTPAuthorizationCredentials=Depends(security)):
     
     user_id=payload["user_id"]
 
-    con=psycopg2.connect(
-        host="localhost",
-        database="Task_Manager",
-        user="postgres",
-        password="postgres"
-    )
+    con=get_connection()
     cursor=con.cursor()
 
     cursor.execute("SELECT id FROM users WHERE id=%s",(user_id,))
@@ -616,12 +553,7 @@ def Pending_Tasks(credentials:HTTPAuthorizationCredentials=Depends(security)):
     
     user_id=payload["user_id"]
 
-    con=psycopg2.connect(
-        host="localhost",
-        database="Task_Manager",
-        user="postgres",
-        password="postgres"
-    )
+    con=get_connection()
     cursor=con.cursor()
 
     cursor.execute("SELECT id,title,description,due_date,status FROM tasks WHERE status='Pending' AND user_id=%s ",(user_id,))
@@ -653,12 +585,7 @@ def Filter_Via_Status(status_code:str, credentials:HTTPAuthorizationCredentials=
     
     user_id=payload["user_id"]
 
-    con=psycopg2.connect(
-        host="localhost",
-        database="Task_Manager",
-        user="postgres",
-        password="postgres"
-    )
+    con=get_connection()
     cursor=con.cursor()
 
     cursor.execute("SELECT id,title,description,priority,due_date,status,created_date,created_time FROM tasks WHERE status=%s AND user_id=%s",(status_code,user_id))
@@ -693,12 +620,7 @@ def Search_Tasks(keyword:str,credentials:HTTPAuthorizationCredentials=Depends(se
     
     user_id=payload["user_id"]
 
-    con=psycopg2.connect(
-        host="localhost",
-        database="Task_Manager",
-        user="postgres",
-        password="postgres"
-    )
+    con=get_connection()
     cursor=con.cursor()
 
     search_term=f"%{keyword}%"
