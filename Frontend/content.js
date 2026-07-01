@@ -867,7 +867,7 @@ delete_my_account.addEventListener('click',async(event)=>{
             setTimeout(() => {
                     localStorage.removeItem('token');
                     localStorage.removeItem('username');
-                    window.location.href = "Login.html"; 
+                    window.location.href = "index.html"; 
                 }, 3000);
         }else{
             document.getElementById('delete-account-fail-box').style.display=" block"
