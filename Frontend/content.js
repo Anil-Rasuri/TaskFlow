@@ -156,7 +156,7 @@ const LOgout=document.getElementById('logout');
 
         localStorage.removeItem('token');
         localStorage.removeItem('username')
-        window.location.href="Login.html"
+        window.location.href="index.html"
 
     })
 
