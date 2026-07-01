@@ -173,7 +173,7 @@ console.log(token);
 
 async function loadDashboard(){
     try{
-        const response= await fetch("http://127.0.0.1:8000/Dashboard",{
+        const response= await fetch("https://taskflow-backend-esfy.onrender.com/Dashboard",{
             method:"GET",
             headers:{
                 "Content-Type":"application/json",
@@ -219,7 +219,7 @@ const Low=document.getElementById('Low');
 
 async function loadPriority(){
     try{
-        const response= await fetch("http://127.0.0.1:8000/Priority-Breakdown",{
+        const response= await fetch("https://taskflow-backend-esfy.onrender.com/Priority-Breakdown",{
             method:"GET",
             headers:{
                 "Content-Type":"application/json",
@@ -257,7 +257,7 @@ const urgentBody=document.getElementById("urgent-body");
 
 async function loadUrgentTasks(){
     try{
-        const response= await fetch("http://127.0.0.1:8000/Dashboard-Urgent-Tasks",{
+        const response= await fetch("https://taskflow-backend-esfy.onrender.com/Dashboard-Urgent-Tasks",{
             method:"GET",
             headers:{
                 "Content-Type":"application/json",
@@ -319,7 +319,7 @@ const task_table=document.getElementById('view-task-table')
 
 async function LoadAllTasks(){
     try{
-        const response=await fetch("http://127.0.0.1:8000/View-Tasks",{
+        const response=await fetch("https://taskflow-backend-esfy.onrender.com/View-Tasks",{
             method:"GET",
             headers:{
                 "Content-Type":"application/json",
@@ -386,7 +386,7 @@ const AT_btn=document.getElementById('AT-btn');
         }
 
         try{
-            const response=await fetch("http://127.0.0.1:8000/Add-Task",{
+            const response=await fetch("https://taskflow-backend-esfy.onrender.com/Add-Task",{
                 method:"POST",
                 headers:{
                 "Content-Type":"application/json",
@@ -458,7 +458,7 @@ const task_table_u=document.getElementById('view-task-to-update')
 
 async function LoadAllTasks_TO_update(){
     try{
-        const response=await fetch("http://127.0.0.1:8000/View-Tasks",{
+        const response=await fetch("https://taskflow-backend-esfy.onrender.com/View-Tasks",{
             method:"GET",
             headers:{
                 "Content-Type":"application/json",
@@ -545,7 +545,7 @@ const update_b=document.getElementById('button-to-update');
             try {
        
                 const response = await fetch(
-                    `http://127.0.0.1:8000/Update-Task?id=${encodeURIComponent(new_id)}`,
+                    `https://taskflow-backend-esfy.onrender.com/Update-Task?id=${encodeURIComponent(new_id)}`,
                     {
                     method: "PUT",
                     headers: {
@@ -612,7 +612,7 @@ delete_task_button.addEventListener('click', async(event)=>{
     }
 
     try{
-        const response=await fetch(`http://127.0.0.1:8000/Delete-Task?id=${encodeURIComponent(delete_id)}`,{
+        const response=await fetch(`https://taskflow-backend-esfy.onrender.com/Delete-Task?id=${encodeURIComponent(delete_id)}`,{
             method:"DELETE",
             headers:{
                 "Content-Type":"application/json",
@@ -669,7 +669,7 @@ Get_Tasks.addEventListener('click',async(event)=>{
     const status_value=document.getElementById('status-select').value;
 
     try{
-        const response=await fetch(`http://127.0.0.1:8000/Filter-via-Status?status_code=${encodeURIComponent(status_value)}`,{
+        const response=await fetch(`https://taskflow-backend-esfy.onrender.com/Filter-via-Status?status_code=${encodeURIComponent(status_value)}`,{
             method:"GET",
             headers:{
                 "Content-Type":"application/json",
@@ -806,7 +806,7 @@ Update_password.addEventListener('click',async(event)=>{
 
 
     try{
-        const response=await fetch(`http://127.0.0.1:8000/Change-Password`,{
+        const response=await fetch(`https://taskflow-backend-esfy.onrender.com/Change-Password`,{
         method:"PUT",
         headers:{
             "Authorization": `Bearer ${token}`,
@@ -849,7 +849,7 @@ const delete_my_account=document.getElementById('delete-yes-btn')
 delete_my_account.addEventListener('click',async(event)=>{
     event.preventDefault();
     try{
-        const response=await fetch(`http://127.0.0.1:8000/Delete-User-Account`,{
+        const response=await fetch(`https://taskflow-backend-esfy.onrender.com/Delete-User-Account`,{
             method:"DELETE",
             headers:{
                 "Authorization": `Bearer ${token}`,
@@ -897,7 +897,7 @@ search.addEventListener('click',async(event)=>{
         return;
     }
 
-    const response=await fetch(`http://127.0.0.1:8000/Search-Tasks?keyword=${encodeURIComponent(keyword)}`,{
+    const response=await fetch(`https://taskflow-backend-esfy.onrender.com/Search-Tasks?keyword=${encodeURIComponent(keyword)}`,{
         method:"GET",
         headers:{
             "Authorization": `Bearer ${token}`,
@@ -978,7 +978,7 @@ const update_status=document.getElementById('Change-status');
             try {
        
                 const response = await fetch(
-                    `http://127.0.0.1:8000/Change-Status?id=${encodeURIComponent(taskid)}`,
+                    `https://taskflow-backend-esfy.onrender.com/Change-Status?id=${encodeURIComponent(taskid)}`,
                     {
                     method: "PUT",
                     headers: {

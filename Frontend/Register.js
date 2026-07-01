@@ -15,7 +15,7 @@ user_signup.addEventListener('click',(event)=>{
         return;
     }
 
-    fetch("http://127.0.0.1:8000/Registration",{
+    fetch("https://taskflow-backend-esfy.onrender.com/Registration",{
     method:"POST",
     headers:{
         "Content-Type":"application/json"
